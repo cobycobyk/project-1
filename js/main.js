@@ -1,18 +1,49 @@
 /*----- constants -----*/
-
+const dataLookup = {
+    even: {
+        numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36],
+        odds: 2
+    },
+    odd: {
+        numbers: [2, 4],
+        odds: 2
+    },
+    '0': {
+        numbers: [0],
+        odds: 35
+    },
+    '00': {
+        numbers: [-1],
+        odds: 35
+    },
+    h1: {
+        numbers: [1, 2],
+        odds: 0.5
+    },
+    f1: {
+        numbers: [1,2,4,5],
+        odds:
+    }
+}
 /*----- app's state (variables) -----*/
-
+const bets;
 /*----- cached element references -----*/
 
 /*----- event listeners -----*/
 
 /*----- functions -----*/
+init()
 
+function init() {
+    bets = []
+};
+function calculateWinnings() {
 
+}
 
 /*
 1. define required constants
-    define a wheel array with numbers, colors, 12ths, rows, even/odd, 1-18, 19-36, or column objects 
+    define a wheel object with numbers, colors, 12ths, rows, even/odd, 1-18, 19-36, or column objects 
     define an odds object
     define a chipset amt array
 2. define required variables used the track the state of the game
@@ -23,6 +54,7 @@
     use a variable to represent current bet placement
     use a variable to represent winning num
     define past numbers variable
+    define last bet variable
 3. store elements on the page that will be access in the code more than 
 once in variable to make code more concise, readable and performant
     store the chipset
@@ -67,6 +99,15 @@ once in variable to make code more concise, readable and performant
     show clear and spin btns
 7. handle player clicking on spin
     use math.random to choose what wheel array winner will land on
+    calculate winnings 
+        loop throgh each bet object in bets array
+        for each bet object 
+            lookup type of bet on data lookup object
+            check if number array inside of object contains result number
+                true 
+                    update winnings (multiple bet amt to odds number)
+    clear bets 
+    call render
 
 8. handle player clicking on clear
     update total bet to 0
