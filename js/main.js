@@ -1,32 +1,79 @@
+
 /*----- constants -----*/
-const dataLookup = {
-    even: {
-        numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36],
-        odds: 2
-    },
-    odd: {
-        numbers: [2, 4],
-        odds: 2
-    },
+const DATA_LOOKUP = {
     '0': {
         numbers: [0],
-        odds: 35
+        odds: 35,
     },
     '00': {
         numbers: [-1],
-        odds: 35
+        odds: 35,
     },
-    h1: {
+    '1': {
+        numbers: [1],
+        odds: 35,
+    },
+    even: {
+        numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36],
+        odds: 1,
+    },
+    odd: {
+        numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35],
+        odds: 1,
+    },
+    black: {
+        numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36],
+        odds: 1,
+    },
+    red: {
+        numbers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35],
+        odds: 1,
+    },
+    split1: { //halves
         numbers: [1, 2],
-        odds: 0.5
+        odds: 17,
     },
-    f1: {
-        numbers: [1,2,4,5],
-        odds:
+    corner1: { //fouths
+        numbers: [1, 2, 4, 5],
+        odds: 8,
+    },
+    tw1: { //twelfths rows
+        numbers: [1, 2, 4, 5],
+        odds: 8,
+    },
+    th1: { //thirds columns
+        numbers: [1, 2, 4, 5],
+        odds: 2,
+    },
+    low { //one to 18
+        numbers: [1, 2, 4, 5],
+        odds: 1,
     }
+};
+const CHIPSET = {
+    '1': 1,
+    '5': 5,
+    '10': 10,
+    '25': 25,
+    '100': 100,
+}
+
+const IMAGES = {
+    chip1 = 'url("http")'
+    chip5 = 'url("http")'
+    chip10 = 'url("http")'
+    chip25 = 'url("http")'
+    chip100 = 'url("http")'
 }
 /*----- app's state (variables) -----*/
+const balance;
+const totalCurrentBet;
+const winnings;
+const currentChip;
 const bets;
+const winningNum;
+const previousWins;
+const lastBets;
 /*----- cached element references -----*/
 
 /*----- event listeners -----*/
@@ -35,8 +82,13 @@ const bets;
 init()
 
 function init() {
-    bets = []
+    bets = [];
+
+    render();
 };
+function render() {
+
+}
 function calculateWinnings() {
 
 }
@@ -44,7 +96,6 @@ function calculateWinnings() {
 /*
 1. define required constants
     define a wheel object with numbers, colors, 12ths, rows, even/odd, 1-18, 19-36, or column objects 
-    define an odds object
     define a chipset amt array
 2. define required variables used the track the state of the game
     use a variable to represent player balance
@@ -53,7 +104,7 @@ function calculateWinnings() {
     use a variable to represent current chip amount
     use a variable to represent current bet placement
     use a variable to represent winning num
-    define past numbers variable
+    define previous wins variable
     define last bet variable
 3. store elements on the page that will be access in the code more than 
 once in variable to make code more concise, readable and performant
