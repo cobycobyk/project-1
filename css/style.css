@@ -8,10 +8,116 @@
   }
   header {
     font-size: 3vmin;
-    padding: 1vmin;
+    padding: .2vmin;
     background-color: #037171;
     color: white;
     text-align: center;
     letter-spacing: .5vmin;
 
+  }
+  main {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .left {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      margin-left: 20px;
+      margin-top: 20px;
+      height: 500px;
+      width: 300px;
+      height: 500px;
+  }
+
+  .lastNumbers {
+      grid-area: 1/1/3/1;
+  }
+  .wheel {
+      grid-area: 1/2/5/5;
+      justify-self: center;
+      align-self: center;
+      background-image: "https://i.imgur.com/Kvt3PEe.png";
+  }
+  .message {
+      grid-area: 6/1/7/5;
+      align-self: center;
+      justify-self: center;
+      background-color: burlywood;
+  }
+  .buttons {
+      grid-area: 7/1/8/5;
+  }
+  .selectChip {
+      grid-area: 9/1/10/5;
+      display: flex;
+      justify-content: center;
+  }
+  .board {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(14, 1fr);
+      margin: 20px;
+      border: 2px solid black;
+      width: 300px;
+      height: 600px;
+    }
+  .board div {
+      border: 2px solid pink;
+  }
+  .individuals {
+      grid-area: 2/3/14/6;
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid green;
+  }
+  #doublezero {
+      grid-area: 1/3/1/5;
+  }
+  #zero {
+      grid-area: 1/5/1/6;
+  }
+  #tw1 {
+      grid-area: 2/2/6/2;
+      text-orientation: sideways;
+  }
+  #tw2 {
+      grid-area: 6/2/10/2;
+      text-orientation: sideways;
+  }
+  #tw3 {
+      grid-area: 10/2/14/2;
+      text-orientation: sideways;
+  }
+  #low {
+      grid-area: 2/1/4/1;
+  }
+  #even {
+      grid-area: 4/1/6/1;
+  }
+  #red {
+      grid-area: 6/1/8/1;
+  }
+  #black {
+      grid-area: 8/1/10/1;
+  }
+  #odd {
+      grid-area: 10/1/12/1;
+  }
+  #high {
+      grid-area: 12/1/14/1;
+  }
+  #th1 {
+      grid-area: 14/3/14/3;
+  }
+  #th2 {
+      grid-area: 14/4/14/4;
+  }
+  #th3 {
+      grid-area: 14/5/14/5;
+  }
+  footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
   }
