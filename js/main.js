@@ -211,33 +211,39 @@ const DATA_LOOKUP = {
     },
 };
 const CHIPSET = {
-    1: 1,
-    5: 5,
-    10: 10,
-    25: 25,
-    100: 100,
+    onedollar: 1,
+    fivedollar: 5,
+    tendollar: 10,
+    twentyfivedollar: 25,
+    onehundreddollar: 100,
 }
 
-const IMAGES = {
-    chip1 = 'url("http")',
-    chip5 = 'url("http")',
-    chip10 = 'url("http")',
-    chip25 = 'url("http")',
-    chip100 = 'url("http")',
-}
+// const IMAGES = {
+//     chip1 = 'url("http")',
+//     chip5 = 'url("http")',
+//     chip10 = 'url("http")',
+//     chip25 = 'url("http")',
+//     chip100 = 'url("http")',
+// }
 /*----- app's state (variables) -----*/
-const balance;
-const totalCurrentBet;
-const winnings;
-const currentChip;
-const bets;
-const winningNum;
-const previousWins;
-const lastBets;
+let balance;
+let totalCurrentBet;
+let winnings;
+let currentChip;
+let bets;
+let winningNum;
+let previousWins;
+let lastBets;
 /*----- cached element references -----*/
-
+const spinBtn = document.getElementById('spin');
+const clrBetBtn = document.getElementById('clrBet');
+const betLastBtn = document.getElementById('betLast');
+const msg = document.getElementById('message');
+const wheel = document.getElementById('wheel');
 /*----- event listeners -----*/
-
+document.querySelector('.board').addEventListener('click', handleBetPlacement);
+document.querySelector('.selectChip').addEventListener('click', handleChipSelect);
+document.querySelector('.buttons').addEventListener('click', handleBtnClick)
 /*----- functions -----*/
 init()
 
@@ -245,13 +251,31 @@ function init() {
     balance = 10000;
     totalCurrentBet = 0;
     winnings = 0;
-    currentChip = CHIPSET['1'];
+    currentChip = CHIPSET.onedollar;
     bets = [];
     previousWins = [null, null, null, null, null]; //new Array(5).fill(null)
-    lastBets = []
+    lastBets = [];
+    console.log('init works')
     render();
 };
 function render() {
+
+    calculateWinnings();
+}
+function handleBetPlacement(evt) {
+    console.log('bet')
+}
+function handleChipSelect(evt) {
+    currentChip = CHIPSET[evt.target.id];
+    document.body.style.curser = "url(https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png')";
+    console.log('chip is ', currentChip)
+}
+function handleBtnClick(evt) {
+    if (evt.target.id === 'spin') spinBoard();
+    if (evt.target.id === 'clrBet') bets = [];
+    if (evt.target.id === 'betLast') bets = lastBets;
+}
+function spinBoard() {
 
 }
 function calculateWinnings() {
