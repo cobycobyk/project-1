@@ -9,150 +9,150 @@ const DATA_LOOKUP = {
         numbers: [-1],
         odds: 35,
     },
-    '1': {
-        numbers: [1],
+    integer: {
+        numbers: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
         odds: 35,
     },
-    '2': {
-        numbers: [2],
-        odds: 35,
-    },
-    '3': {
-        numbers: [3],
-        odds: 35,
-    },
-    '4': {
-        numbers: [4],
-        odds: 35,
-    },
-    '5': {
-        numbers: [5],
-        odds: 35,
-    },
-    '6': {
-        numbers: [6],
-        odds: 35,
-    },
-    '7': {
-        numbers: [7],
-        odds: 35,
-    },
-    '8': {
-        numbers: [8],
-        odds: 35,
-    },
-    '9': {
-        numbers: [9],
-        odds: 35,
-    },
-    '10': {
-        numbers: [10],
-        odds: 35,
-    },
-    '11': {
-        numbers: [11],
-        odds: 35,
-    },
-    '12': {
-        numbers: [12],
-        odds: 35,
-    },
-    '13': {
-        numbers: [13],
-        odds: 35,
-    },
-    '14': {
-        numbers: [14],
-        odds: 35,
-    },
-    '15': {
-        numbers: [15],
-        odds: 35,
-    },
-    '16': {
-        numbers: [16],
-        odds: 35,
-    },
-    '17': {
-        numbers: [17],
-        odds: 35,
-    },
-    '18': {
-        numbers: [18],
-        odds: 35,
-    },
-    '19': {
-        numbers: [19],
-        odds: 35,
-    },
-    '20': {
-        numbers: [20],
-        odds: 35,
-    },
-    '21': {
-        numbers: [21],
-        odds: 35,
-    },
-    '22': {
-        numbers: [22],
-        odds: 35,
-    },
-    '23': {
-        numbers: [23],
-        odds: 35,
-    },
-    '24': {
-        numbers: [24],
-        odds: 35,
-    },
-    '25': {
-        numbers: [25],
-        odds: 35,
-    },
-    '26': {
-        numbers: [26],
-        odds: 35,
-    },
-    '27': {
-        numbers: [27],
-        odds: 35,
-    },
-    '28': {
-        numbers: [28],
-        odds: 35,
-    },
-    '29': {
-        numbers: [29],
-        odds: 35,
-    },
-    '30': {
-        numbers: [30],
-        odds: 35,
-    },
-    '31': {
-        numbers: [31],
-        odds: 35,
-    },
-    '32': {
-        numbers: [32],
-        odds: 35,
-    },
-    '33': {
-        numbers: [33],
-        odds: 35,
-    },
-    '34': {
-        numbers: [34],
-        odds: 35,
-    },
-    '35': {
-        numbers: [35],
-        odds: 35,
-    },
-    '36': {
-        numbers: [36],
-        odds: 35,
-    },
+    // '2': {
+    //     numbers: [2],
+    //     odds: 35,
+    // },
+    // '3': {
+    //     numbers: [3],
+    //     odds: 35,
+    // },
+    // '4': {
+    //     numbers: [4],
+    //     odds: 35,
+    // },
+    // '5': {
+    //     numbers: [5],
+    //     odds: 35,
+    // },
+    // '6': {
+    //     numbers: [6],
+    //     odds: 35,
+    // },
+    // '7': {
+    //     numbers: [7],
+    //     odds: 35,
+    // },
+    // '8': {
+    //     numbers: [8],
+    //     odds: 35,
+    // },
+    // '9': {
+    //     numbers: [9],
+    //     odds: 35,
+    // },
+    // '10': {
+    //     numbers: [10],
+    //     odds: 35,
+    // },
+    // '11': {
+    //     numbers: [11],
+    //     odds: 35,
+    // },
+    // '12': {
+    //     numbers: [12],
+    //     odds: 35,
+    // },
+    // '13': {
+    //     numbers: [13],
+    //     odds: 35,
+    // },
+    // '14': {
+    //     numbers: [14],
+    //     odds: 35,
+    // },
+    // '15': {
+    //     numbers: [15],
+    //     odds: 35,
+    // },
+    // '16': {
+    //     numbers: [16],
+    //     odds: 35,
+    // },
+    // '17': {
+    //     numbers: [17],
+    //     odds: 35,
+    // },
+    // '18': {
+    //     numbers: [18],
+    //     odds: 35,
+    // },
+    // '19': {
+    //     numbers: [19],
+    //     odds: 35,
+    // },
+    // '20': {
+    //     numbers: [20],
+    //     odds: 35,
+    // },
+    // '21': {
+    //     numbers: [21],
+    //     odds: 35,
+    // },
+    // '22': {
+    //     numbers: [22],
+    //     odds: 35,
+    // },
+    // '23': {
+    //     numbers: [23],
+    //     odds: 35,
+    // },
+    // '24': {
+    //     numbers: [24],
+    //     odds: 35,
+    // },
+    // '25': {
+    //     numbers: [25],
+    //     odds: 35,
+    // },
+    // '26': {
+    //     numbers: [26],
+    //     odds: 35,
+    // },
+    // '27': {
+    //     numbers: [27],
+    //     odds: 35,
+    // },
+    // '28': {
+    //     numbers: [28],
+    //     odds: 35,
+    // },
+    // '29': {
+    //     numbers: [29],
+    //     odds: 35,
+    // },
+    // '30': {
+    //     numbers: [30],
+    //     odds: 35,
+    // },
+    // '31': {
+    //     numbers: [31],
+    //     odds: 35,
+    // },
+    // '32': {
+    //     numbers: [32],
+    //     odds: 35,
+    // },
+    // '33': {
+    //     numbers: [33],
+    //     odds: 35,
+    // },
+    // '34': {
+    //     numbers: [34],
+    //     odds: 35,
+    // },
+    // '35': {
+    //     numbers: [35],
+    //     odds: 35,
+    // },
+    // '36': {
+    //     numbers: [36],
+    //     odds: 35,
+    // },
     even: {
         numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36],
         odds: 1,
@@ -238,12 +238,15 @@ let lastBets;
 const spinBtn = document.getElementById('spin');
 const clrBetBtn = document.getElementById('clrBet');
 const betLastBtn = document.getElementById('betLast');
-const msg = document.getElementById('message');
-const wheel = document.getElementById('wheel');
+const msgEl = document.getElementById('message');
+const wheelEl = document.getElementById('wheel');
+const balanceEl = document.getElementById('balance');
+const totalBetEl = document.getElementById('totalBet');
+const winningsEl = document.getElementById('winnings');
 /*----- event listeners -----*/
 document.querySelector('.board').addEventListener('click', handleBetPlacement);
 document.querySelector('.selectChip').addEventListener('click', handleChipSelect);
-document.querySelector('.buttons').addEventListener('click', handleBtnClick)
+document.querySelector('.buttons').addEventListener('click', handleBtnClick);
 /*----- functions -----*/
 init()
 
@@ -255,32 +258,86 @@ function init() {
     bets = [];
     previousWins = [null, null, null, null, null]; //new Array(5).fill(null)
     lastBets = [];
-    console.log('init works')
+    console.log('init')
     render();
 };
 function render() {
-
-    calculateWinnings();
-}
+    balanceEl.textContent = `Balance: $${balance}`;
+    totalBetEl.textContent = `Total Bet: $${totalCurrentBet}`;
+    winningsEl.textContent = `Winnings: $${winnings}`;
+    renderButtons();
+    renderPreviousWins();
+    renderBetPlacement();
+};
+function renderMessage() {
+    msgEl.innerHTML = '<h2>Place your Bets!</h2>';
+    console.log('renderMessage');
+};
+function renderButtons() {
+    spinBtn.style.visibility = bets.length ? 'visible' : 'hidden';
+    clrBetBtn.style.visibility = bets.length ? 'visible' : 'hidden';
+    betLastBtn.style.visibility = lastBets.length ? 'visible' : 'hidden';
+    console.log('renderButtons');
+};
 function handleBetPlacement(evt) {
-    console.log('bet')
-}
+    if (evt.target.className === 'placeholder') return;
+    let classSplit = evt.target.className.split(' ');
+    let firstClass = classSplit[0]; 
+    let betObj = {
+        //what kind of bet
+        //number bet was placed on
+        //bet amount
+    };
+    betObj.type = firstClass;
+    betObj.number = evt.target.id;
+    betObj.amount = currentChip;
+    bets.push(betObj);
+    balance -= currentChip;
+    totalCurrentBet += currentChip;
+    render();
+    console.log(bets);
+};
 function handleChipSelect(evt) {
     currentChip = CHIPSET[evt.target.id];
-    document.body.style.curser = "url(https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png')";
-    console.log('chip is ', currentChip)
-}
+    renderMessage();
+    render();
+    console.log('chip is ', currentChip);
+};
 function handleBtnClick(evt) {
-    if (evt.target.id === 'spin') spinBoard();
+    console.log('handleBtnClick');
+    if (evt.target.id === 'spin') getWinningNumber();
     if (evt.target.id === 'clrBet') bets = [];
     if (evt.target.id === 'betLast') bets = lastBets;
-}
-function spinBoard() {
+};
+function getWinningNumber() {
+    spinWheel();
+    winningNum = Math.floor(Math.random() * 38);
+    previousWins.unshift(winningNum);
+    previousWins.pop();
+    calculateWinnings()
+    renderPreviousWins();
 
-}
+    console.log('getWinningNumber');
+};
+function spinWheel() {
+    //render wheel spinning
+    console.log('spinWheel');
+    return;
+};
 function calculateWinnings() {
-
-}
+    console.log('calculateWinnings');
+};
+function renderPreviousWins() {
+    if (previousWins[0]) document.getElementById('ln1').textContent = previousWins[0];
+    if (previousWins[1]) document.getElementById('ln2').textContent = previousWins[1];
+    if (previousWins[2]) document.getElementById('ln3').textContent = previousWins[2];
+    if (previousWins[3]) document.getElementById('ln4').textContent = previousWins[3];
+    if (previousWins[4]) document.getElementById('ln5').textContent = previousWins[4];
+    console.log('renderPreviousWins');
+};
+function renderBetPlacement() {
+    console.log('renderBetPlacement');
+};
 
 /*
 1. define required constants
