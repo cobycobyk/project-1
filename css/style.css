@@ -81,7 +81,6 @@ h3 {
 #onedollar {
     background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
     background-size: 100%;
-
 }
 #fivedollar {
     background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
@@ -148,81 +147,117 @@ footer {
 .black {
     background-color: #000000;
 }
-#tw1 {
+.tw1 {
     grid-area: 2/2/6/2;
     text-orientation: sideways;
 }
-#tw2 {
+.tw2 {
     grid-area: 6/2/10/2;
     text-orientation: sideways;
 }
-#tw3 {
+.tw3 {
     grid-area: 10/2/14/2;
     text-orientation: sideways;
 }
-#low {
+.low {
     grid-area: 2/1/4/1;
 }
-#even {
+.board > .even {
     grid-area: 4/1/6/1;
 }
-#red {
+.board > .red {
     grid-area: 6/1/8/1;
 }
-#black {
+.board > .black {
     grid-area: 8/1/10/1;
 }
-#odd {
+.board > .odd {
     grid-area: 10/1/12/1;
 }
-#high {
+.high {
     grid-area: 12/1/14/1;
 }
-#th1 {
+.th1 {
     grid-area: 14/3/14/4;
 }
-#th2 {
+.th2 {
     grid-area: 14/4/14/5;
 }
-#th3 {
+.th3 {
     grid-area: 14/5/14/7;
 }
 .individuals > div:hover {
     opacity: .6;
 }
-#odd:hover ~.individuals>.odd {
+.odd:hover {
     opacity: .6;
 }
-#even:hover ~.individuals>.even {
+.even:hover {
     opacity: .6;
 }
-#red:hover ~.individuals>.red {
+.red:hover {
     opacity: .6;
 }
-#black:hover ~.individuals>.black {
+.black:hover {
     opacity: .6;
 }
-#low:hover ~.individuals>.ot18 {
+.low:hover {
     opacity: .6;
 }
-#high:hover ~.individuals>.et36 {
+.high:hover {
     opacity: .6;
 }
-#tw1:hover ~.individuals>.first12 {
+.tw1:hover {
     opacity: .6;
 }
-#tw2:hover ~.individuals>.second12 {
+.tw2:hover {
     opacity: .6;
 }
-#tw3:hover ~.individuals>.third12 {
+.tw3:hover {
     opacity: .6;
 }
-#th1:hover ~.individuals>.first3 {
+.th1:hover {
     opacity: .6;
 }
-#th2:hover ~.individuals>.second3 {
+.th2:hover {
     opacity: .6;
 }
-#th3:hover ~.individuals>.third3 {
+.th3:hover {
+    opacity: .6;
+}
+.odd:hover ~.individuals>.odd {
+    opacity: .6;
+}
+.even:hover ~.individuals>.even {
+    opacity: .6;
+}
+.red:hover ~.individuals>.red {
+    opacity: .6;
+}
+.black:hover ~.individuals>.black {
+    opacity: .6;
+}
+.low:hover ~.individuals>.ot18 {
+    opacity: .6;
+}
+.high:hover ~.individuals>.et36 {
+    opacity: .6;
+}
+.tw1:hover ~.individuals>.first12 {
+    opacity: .6;
+}
+.tw2:hover ~.individuals>.second12 {
+    opacity: .6;
+}
+.tw3:hover ~.individuals>.third12 {
+    opacity: .6;
+}
+.th1:hover ~.individuals>.first3 {
+    opacity: .6;
+}
+.th2:hover ~.individuals>.second3 {
+    opacity: .6;
+}
+.th3:hover ~.individuals>.third3 {
     opacity: .6;
 }

@@ -289,7 +289,7 @@ function handleBetPlacement(evt) {
         //bet amount
     };
     betObj.type = firstClass;
-    betObj.number = evt.target.id;
+    betObj.number = [evt.target.id]; // iterate over this to turn into number
     betObj.amount = currentChip;
     bets.push(betObj);
     balance -= currentChip;
@@ -298,16 +298,19 @@ function handleBetPlacement(evt) {
     console.log(bets);
 };
 function handleChipSelect(evt) {
+    if (evt.target.tagName !== 'DIV') return;
     currentChip = CHIPSET[evt.target.id];
     renderMessage();
     render();
     console.log('chip is ', currentChip);
 };
 function handleBtnClick(evt) {
+    if (evt.target.tagName !== 'BUTTON') return;
     console.log('handleBtnClick');
     if (evt.target.id === 'spin') getWinningNumber();
     if (evt.target.id === 'clrBet') bets = [];
     if (evt.target.id === 'betLast') bets = lastBets;
+    render();
 };
 function getWinningNumber() {
     spinWheel();
@@ -316,15 +319,15 @@ function getWinningNumber() {
     previousWins.pop();
     calculateWinnings()
     renderPreviousWins();
-
     console.log('getWinningNumber');
 };
 function spinWheel() {
     //render wheel spinning
     console.log('spinWheel');
-    return;
 };
 function calculateWinnings() {
+    winnings = winningNum
+
     console.log('calculateWinnings');
 };
 function renderPreviousWins() {
