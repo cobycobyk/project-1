@@ -120,19 +120,18 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(14, 1fr);
     margin: 20px;
-    border: 2px solid black;
     width: 300px;
     height: 630px;
-    background-color: #4CB98D;
 }
 .board div {
-    border: 1px solid black;
+    border: 2px solid black;
     color: white;
 }
 .zero {
     grid-area: 1/3/1/6;
     display: flex;
     justify-content: space-around;
+    background-color: #4CB98D;
 }
 .individuals {
     grid-area: 2/3/14/7;
@@ -140,6 +139,7 @@ h3 {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 11.15px repeat(22, 22.3px);
     margin: 0;
+    background-color: #4CB98D;
 }
 footer {
     display: flex;
@@ -148,12 +148,14 @@ footer {
     margin-left: 30%;
     margin-right: 30%;
     padding-bottom: 20px;
+    font-size: 3vmin;
 }
-.red, .black {
+.red, .black, .even, .odd, .tw1, .tw2, .tw3, .th1, .th2, .th3, .low, .high {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: #4CB98D;
+    
 }
 .red {
     background-color: #FF0048;
@@ -164,15 +166,12 @@ footer {
 }
 .tw1 {
     grid-area: 2/2/6/2;
-    text-orientation: sideways;
 }
 .tw2 {
     grid-area: 6/2/10/2;
-    text-orientation: sideways;
 }
 .tw3 {
     grid-area: 10/2/14/2;
-    text-orientation: sideways;
 }
 .low {
     grid-area: 2/1/4/1;
@@ -241,7 +240,7 @@ footer {
     opacity: .6;
 }
 .odd:hover ~.individuals>.odd {
-    opacity: .6;
+    opacity: .8;
 }
 .even:hover ~.individuals>.even {
     opacity: .6;
