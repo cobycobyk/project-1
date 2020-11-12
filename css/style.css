@@ -31,15 +31,20 @@ main {
     grid-area: 6/1/7/6;
     margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid black;
 }
 .lastNumbers div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     color: white;
+    height: 30px;
+    width: 30px;
     background-color: black;
-    margin: 0 auto;
+    padding: 5px;
 }
 #wheel {
     grid-area: 1/1/6/7;
@@ -77,6 +82,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.selectChip > div {
+    height: 30px;
+    width: 30px;
 }
 #onedollar {
     background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
@@ -139,6 +148,12 @@ footer {
     margin-left: 30%;
     margin-right: 30%;
     padding-bottom: 20px;
+}
+.red, .black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .red {
     background-color: #FF0048;
@@ -260,4 +275,17 @@ footer {
 }
 .th3:hover ~.individuals>.third3 {
     opacity: .6;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.spinWheel {
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 500ms;
 }

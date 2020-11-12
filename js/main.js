@@ -9,150 +9,150 @@ const DATA_LOOKUP = {
         numbers: [-1],
         odds: 35,
     },
-    integer: {
+    '1': {
         numbers: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
         odds: 35,
     },
-    // '2': {
-    //     numbers: [2],
-    //     odds: 35,
-    // },
-    // '3': {
-    //     numbers: [3],
-    //     odds: 35,
-    // },
-    // '4': {
-    //     numbers: [4],
-    //     odds: 35,
-    // },
-    // '5': {
-    //     numbers: [5],
-    //     odds: 35,
-    // },
-    // '6': {
-    //     numbers: [6],
-    //     odds: 35,
-    // },
-    // '7': {
-    //     numbers: [7],
-    //     odds: 35,
-    // },
-    // '8': {
-    //     numbers: [8],
-    //     odds: 35,
-    // },
-    // '9': {
-    //     numbers: [9],
-    //     odds: 35,
-    // },
-    // '10': {
-    //     numbers: [10],
-    //     odds: 35,
-    // },
-    // '11': {
-    //     numbers: [11],
-    //     odds: 35,
-    // },
-    // '12': {
-    //     numbers: [12],
-    //     odds: 35,
-    // },
-    // '13': {
-    //     numbers: [13],
-    //     odds: 35,
-    // },
-    // '14': {
-    //     numbers: [14],
-    //     odds: 35,
-    // },
-    // '15': {
-    //     numbers: [15],
-    //     odds: 35,
-    // },
-    // '16': {
-    //     numbers: [16],
-    //     odds: 35,
-    // },
-    // '17': {
-    //     numbers: [17],
-    //     odds: 35,
-    // },
-    // '18': {
-    //     numbers: [18],
-    //     odds: 35,
-    // },
-    // '19': {
-    //     numbers: [19],
-    //     odds: 35,
-    // },
-    // '20': {
-    //     numbers: [20],
-    //     odds: 35,
-    // },
-    // '21': {
-    //     numbers: [21],
-    //     odds: 35,
-    // },
-    // '22': {
-    //     numbers: [22],
-    //     odds: 35,
-    // },
-    // '23': {
-    //     numbers: [23],
-    //     odds: 35,
-    // },
-    // '24': {
-    //     numbers: [24],
-    //     odds: 35,
-    // },
-    // '25': {
-    //     numbers: [25],
-    //     odds: 35,
-    // },
-    // '26': {
-    //     numbers: [26],
-    //     odds: 35,
-    // },
-    // '27': {
-    //     numbers: [27],
-    //     odds: 35,
-    // },
-    // '28': {
-    //     numbers: [28],
-    //     odds: 35,
-    // },
-    // '29': {
-    //     numbers: [29],
-    //     odds: 35,
-    // },
-    // '30': {
-    //     numbers: [30],
-    //     odds: 35,
-    // },
-    // '31': {
-    //     numbers: [31],
-    //     odds: 35,
-    // },
-    // '32': {
-    //     numbers: [32],
-    //     odds: 35,
-    // },
-    // '33': {
-    //     numbers: [33],
-    //     odds: 35,
-    // },
-    // '34': {
-    //     numbers: [34],
-    //     odds: 35,
-    // },
-    // '35': {
-    //     numbers: [35],
-    //     odds: 35,
-    // },
-    // '36': {
-    //     numbers: [36],
-    //     odds: 35,
-    // },
+    '2': {
+        numbers: [2],
+        odds: 35,
+    },
+    '3': {
+        numbers: [3],
+        odds: 35,
+    },
+    '4': {
+        numbers: [4],
+        odds: 35,
+    },
+    '5': {
+        numbers: [5],
+        odds: 35,
+    },
+    '6': {
+        numbers: [6],
+        odds: 35,
+    },
+    '7': {
+        numbers: [7],
+        odds: 35,
+    },
+    '8': {
+        numbers: [8],
+        odds: 35,
+    },
+    '9': {
+        numbers: [9],
+        odds: 35,
+    },
+    '10': {
+        numbers: [10],
+        odds: 35,
+    },
+    '11': {
+        numbers: [11],
+        odds: 35,
+    },
+    '12': {
+        numbers: [12],
+        odds: 35,
+    },
+    '13': {
+        numbers: [13],
+        odds: 35,
+    },
+    '14': {
+        numbers: [14],
+        odds: 35,
+    },
+    '15': {
+        numbers: [15],
+        odds: 35,
+    },
+    '16': {
+        numbers: [16],
+        odds: 35,
+    },
+    '17': {
+        numbers: [17],
+        odds: 35,
+    },
+    '18': {
+        numbers: [18],
+        odds: 35,
+    },
+    '19': {
+        numbers: [19],
+        odds: 35,
+    },
+    '20': {
+        numbers: [20],
+        odds: 35,
+    },
+    '21': {
+        numbers: [21],
+        odds: 35,
+    },
+    '22': {
+        numbers: [22],
+        odds: 35,
+    },
+    '23': {
+        numbers: [23],
+        odds: 35,
+    },
+    '24': {
+        numbers: [24],
+        odds: 35,
+    },
+    '25': {
+        numbers: [25],
+        odds: 35,
+    },
+    '26': {
+        numbers: [26],
+        odds: 35,
+    },
+    '27': {
+        numbers: [27],
+        odds: 35,
+    },
+    '28': {
+        numbers: [28],
+        odds: 35,
+    },
+    '29': {
+        numbers: [29],
+        odds: 35,
+    },
+    '30': {
+        numbers: [30],
+        odds: 35,
+    },
+    '31': {
+        numbers: [31],
+        odds: 35,
+    },
+    '32': {
+        numbers: [32],
+        odds: 35,
+    },
+    '33': {
+        numbers: [33],
+        odds: 35,
+    },
+    '34': {
+        numbers: [34],
+        odds: 35,
+    },
+    '35': {
+        numbers: [35],
+        odds: 35,
+    },
+    '36': {
+        numbers: [36],
+        odds: 35,
+    },
     even: {
         numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36],
         odds: 1,
@@ -230,7 +230,6 @@ let balance;
 let totalCurrentBet;
 let winnings;
 let currentChip;
-let bets;
 let winningNum;
 let previousWins;
 let lastBets;
@@ -268,41 +267,46 @@ function render() {
     renderButtons();
     renderPreviousWins();
     renderBetPlacement();
+    renderMessage();
 };
-function renderMessage() {
-    msgEl.innerHTML = '<h2>Place your Bets!</h2>';
-    console.log('renderMessage');
+function calculateWinnings() {
+    winnings = 0;
+    bets.forEach(function(bet) {
+        const lookup = DATA_LOOKUP[bet.type];
+        console.log(lookup)
+        if (lookup.numbers.includes(winningNum)) {
+            winnings += (lookup.odds * bet.amount)
+        } 
+    })
+    balance += winnings;
+    console.log('calculateWinnings');
 };
-function renderButtons() {
-    spinBtn.style.visibility = bets.length ? 'visible' : 'hidden';
-    clrBetBtn.style.visibility = bets.length ? 'visible' : 'hidden';
-    betLastBtn.style.visibility = lastBets.length ? 'visible' : 'hidden';
-    console.log('renderButtons');
+function getWinningNumber() {
+    spinWheel(function() {
+        winningNum = Math.floor(Math.random() * 38);
+        previousWins.unshift(winningNum);
+        previousWins.pop();
+        calculateWinnings()
+        render()
+        console.log('getWinningNumber');
+    });
 };
 function handleBetPlacement(evt) {
     if (evt.target.className === 'placeholder') return;
-    let classSplit = evt.target.className.split(' ');
-    let firstClass = classSplit[0]; 
+    // let classSplit = evt.target.className.split(' ');
+    // let firstClass = classSplit[0]; 
     let betObj = {
         //what kind of bet
         //number bet was placed on
         //bet amount
     };
-    betObj.type = firstClass;
-    betObj.number = [evt.target.id]; // iterate over this to turn into number
+    betObj.type = evt.target.id;
     betObj.amount = currentChip;
-    bets.push(betObj);
+    bets.push(betObj); 
     balance -= currentChip;
     totalCurrentBet += currentChip;
     render();
     console.log(bets);
-};
-function handleChipSelect(evt) {
-    if (evt.target.tagName !== 'DIV') return;
-    currentChip = CHIPSET[evt.target.id];
-    renderMessage();
-    render();
-    console.log('chip is ', currentChip);
 };
 function handleBtnClick(evt) {
     if (evt.target.tagName !== 'BUTTON') return;
@@ -312,23 +316,27 @@ function handleBtnClick(evt) {
     if (evt.target.id === 'betLast') bets = lastBets;
     render();
 };
-function getWinningNumber() {
-    spinWheel();
-    winningNum = Math.floor(Math.random() * 38);
-    previousWins.unshift(winningNum);
-    previousWins.pop();
-    calculateWinnings()
-    renderPreviousWins();
-    console.log('getWinningNumber');
+function handleChipSelect(evt) {
+    if (evt.target.tagName !== 'DIV') return;
+    currentChip = CHIPSET[evt.target.id];
+    renderMessage();
+    render();
+    console.log('chip is ', currentChip);
 };
-function spinWheel() {
-    //render wheel spinning
-    console.log('spinWheel');
+function renderBetPlacement() {
+    //
+    console.log('renderBetPlacement');
 };
-function calculateWinnings() {
-    winnings = winningNum
-
-    console.log('calculateWinnings');
+function renderButtons() {
+    spinBtn.style.visibility = bets.length ? 'visible' : 'hidden';
+    clrBetBtn.style.visibility = bets.length ? 'visible' : 'hidden';
+    betLastBtn.style.visibility = lastBets.length ? 'visible' : 'hidden';
+    console.log('renderButtons');
+};
+function renderMessage() {
+    msgEl.innerHTML = '<h2>Place your Bets!</h2>';
+    msgEl.innerHTML = `<h2>Winning Number: ${winningNum}</h2>`
+    console.log('renderMessage');
 };
 function renderPreviousWins() {
     if (previousWins[0]) document.getElementById('ln1').textContent = previousWins[0];
@@ -338,8 +346,13 @@ function renderPreviousWins() {
     if (previousWins[4]) document.getElementById('ln5').textContent = previousWins[4];
     console.log('renderPreviousWins');
 };
-function renderBetPlacement() {
-    console.log('renderBetPlacement');
+function spinWheel(cb) {
+    //add class to wheel el
+    wheelEl.classList.add('spinWheel');
+    setTimeout(function() {
+        wheelEl.classList.remove('spinWheel');
+        cb();
+    }, 2000);
 };
 
 /*
