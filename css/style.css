@@ -5,6 +5,7 @@
 body {
     margin: 10px;
     height: 100vh;
+    background-color: lightgrey;
 }
 header {
     font-size: 2vmin;
@@ -141,7 +142,7 @@ footer {
     margin-left: 30%;
     margin-right: 30%;
     padding-bottom: 20px;
-    font-size: 3vmin;
+    font-size: 22px;
 }
 .red, .black, .even, .odd, .tw1, .tw2, .tw3, .th1, .th2, .th3, .low, .high {
     display: flex;

@@ -3,7 +3,7 @@
 
 * How to play roulette: https://www.roulettesites.org/rules/
 
-![roulette](https://i.imgur.com/o2Eudo2.png)
+![roulette](https://i.imgur.com/07PgTke.png)
 
 ### Technologies Used:
     1. Javascript
