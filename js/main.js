@@ -5,7 +5,10 @@ const CHIPSET = {
     tendollar: 10,
     twentyfivedollar: 25,
     onehundreddollar: 100,
-}
+};
+const chipSound = new Audio('sounds/chipSound.wav');
+const crowdWow = new Audio('sounds/crowdWow.wav');
+const loss = new Audio('sounds/loss.wav');
 /*----- app's state (variables) -----*/
 let balance;
 let totalCurrentBet;
@@ -23,8 +26,8 @@ const wheelEl = document.getElementById('wheel');
 const balanceEl = document.getElementById('balance');
 const totalBetEl = document.getElementById('totalBet');
 const winningsEl = document.getElementById('winnings');
-const boardEl = document.querySelectorAll('.board > div')
-const boardDivEl = document.querySelectorAll('.board > div > div')
+const boardEl = document.querySelectorAll('.board > div');
+const boardDivEl = document.querySelectorAll('.board > div > div');
 /*----- event listeners -----*/
 document.querySelector('.board').addEventListener('click', handleBetPlacement);
 document.querySelector('.selectChip').addEventListener('click', handleChipSelect);
@@ -56,20 +59,25 @@ function calculateWinnings() {
     bets.forEach(function(bet) {
         const lookup = DATA_LOOKUP[bet.type];
         if (lookup.numbers.includes(winningNum)) {
-            winnings += (lookup.odds * bet.amount)
+            winnings += (lookup.odds * bet.amount);
         } 
     })
     balance += winnings;
     lastBets = bets;
-    bets = []
+    bets = [];
+    if (winnings > 0) {
+        crowdWow.play();
+    } else {
+        loss.play();
+    }
 };
 function getWinningNumber() {
     spinWheel(function() {
         winningNum = Math.floor(Math.random() * 38);
         previousWins.unshift(winningNum);
         previousWins.pop();
-        calculateWinnings()
-        render()
+        calculateWinnings();
+        render();
     });
 };
 function handleBetPlacement(evt) {
@@ -80,6 +88,7 @@ function handleBetPlacement(evt) {
     bets.push(betObj); 
     balance -= currentChip;
     totalCurrentBet += currentChip;
+    chipSound.play();
     render();
 };
 function handleBtnClick(evt) {
@@ -100,20 +109,20 @@ function renderBetPlacement() {
         let boardId = betPlace.getAttribute('id');
         if (bets.length) {
             bets.forEach(function(bet) {
-                if (bet.type === boardId) betPlace.classList.add('chipBackground')
+                if (bet.type === boardId) betPlace.classList.add('chipBackground');
             });
         } else {
-            betPlace.classList.remove('chipBackground')
+            betPlace.classList.remove('chipBackground');
         }
     });
     boardDivEl.forEach(function(betDivPlace) {
         let boardDivId = betDivPlace.getAttribute('id');
         if (bets.length) {
             bets.forEach(function(bet) {
-                if (bet.type === boardDivId) betDivPlace.classList.add('chipBackground')
+                if (bet.type === boardDivId) betDivPlace.classList.add('chipBackground');
             });
         } else {
-            betDivPlace.classList.remove('chipBackground')
+            betDivPlace.classList.remove('chipBackground');
         }
     });
 };
@@ -124,13 +133,13 @@ function renderButtons() {
 };
 function renderMessage() {
     if (winningNum) {
-        msgEl.innerHTML = `<h3>Winning Number: ${winningNum}<br>Place your Bets!</h3>`
+        msgEl.innerHTML = `<h3>Winning Number: ${winningNum}<br>Place your Bets!</h3>`;
     } else if (!bets.length) {
         msgEl.innerHTML = '<h3>Welcome! Place your Bets!</h3>';
     } else if (bets.length) {
         msgEl.innerHTML = `<h3>Placing Bets. Click Spin to Begin</h3>`;
     } else {
-        msgEl.innerHTML = `<h3></h3>`
+        msgEl.innerHTML = `<h3></h3>`;
     }
 };
 function renderPreviousWins() {
