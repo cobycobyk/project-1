@@ -14,6 +14,7 @@
 [PlayRoulette!](https://cobycobyk.github.io/project-1/)
 
 ##### Planned Next Steps:
+* Add layout to top of board to make it look like a professional board
 * Add music in the background
 * Allow to scale to mobile size
 * Add ball to correct number on wheel
