@@ -53,14 +53,6 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
-#wheelCircle {
-    grid-area: 1/1/6/7;
-    margin: 76px;
-}
-#wheelCircle > div {
-    fill: transparent;
-    stroke: black;
-}
 #message {
     grid-area: 7/1/8/6;
     display: flex;
@@ -100,31 +92,9 @@ h3 {
     width: 70px;
     padding: 5px;
 }
-#onedollar {
+.selectChip > div {
     background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
     background-size: 100%;
-}
-#fivedollar {
-    background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#tendollar {
-    background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#twentyfivedollar {
-    background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#onehundreddollar {
-    background-image: url("https://cdn1.iconfinder.com/data/icons/games-7/48/Chip-512.png");
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -182,7 +152,6 @@ footer {
 }
 .red {
     background-color: #FF0048;
-    content: "1";
 }
 .black {
     background-color: #000000;
@@ -266,37 +235,37 @@ footer {
     opacity: .8;
 }
 .even:hover ~.individuals>.even {
-    opacity: .6;
+    opacity: .8;
 }
 .red:hover ~.individuals>.red {
-    opacity: .6;
+    opacity: .8;
 }
 .black:hover ~.individuals>.black {
-    opacity: .6;
+    opacity: .8;
 }
 .low:hover ~.individuals>.ot18 {
-    opacity: .6;
+    opacity: .8;
 }
 .high:hover ~.individuals>.et36 {
-    opacity: .6;
+    opacity: .8;
 }
 .tw1:hover ~.individuals>.first12 {
-    opacity: .6;
+    opacity: .8;
 }
 .tw2:hover ~.individuals>.second12 {
-    opacity: .6;
+    opacity: .8;
 }
 .tw3:hover ~.individuals>.third12 {
-    opacity: .6;
+    opacity: .8;
 }
 .th1:hover ~.individuals>.first3 {
-    opacity: .6;
+    opacity: .8;
 }
 .th2:hover ~.individuals>.second3 {
-    opacity: .6;
+    opacity: .8;
 }
 .th3:hover ~.individuals>.third3 {
-    opacity: .6;
+    opacity: .8;
 }
 @keyframes spin {
     from {
