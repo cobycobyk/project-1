@@ -101,6 +101,7 @@ function handleBtnClick(evt) {
 function handleChipSelect(evt) {
     if (evt.target.tagName !== 'DIV') return;
     currentChip = CHIPSET[evt.target.id];
+    chipSound.play();
     render();
 };
 
