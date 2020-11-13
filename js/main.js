@@ -562,7 +562,8 @@ const wheelEl = document.getElementById('wheel');
 const balanceEl = document.getElementById('balance');
 const totalBetEl = document.getElementById('totalBet');
 const winningsEl = document.getElementById('winnings');
-const betsEl = document.getElementById('nowBets')
+const boardEl = document.querySelectorAll('.board > div')
+const boardDivEl = document.querySelectorAll('.board > div > div')
 /*----- event listeners -----*/
 document.querySelector('.board').addEventListener('click', handleBetPlacement);
 document.querySelector('.selectChip').addEventListener('click', handleChipSelect);
@@ -634,13 +635,26 @@ function handleChipSelect(evt) {
 };
 
 function renderBetPlacement() {
-    if (bets.length) {
-        for (key in bets) {
-            let newDiv = document.createElement('div');
-            betsEl.appendChild(newDiv)
-            newDiv.textContent = `${key}:${bets['key']}`
+    boardEl.forEach(function(betPlace) {
+        let boardId = betPlace.getAttribute('id');
+        if (bets.length) {
+            bets.forEach(function(bet) {
+                if (bet.type === boardId) betPlace.classList.add('chipBackground')
+            });
+        } else {
+            betPlace.classList.remove('chipBackground')
         }
-    }
+    });
+    boardDivEl.forEach(function(betDivPlace) {
+        let boardDivId = betDivPlace.getAttribute('id');
+        if (bets.length) {
+            bets.forEach(function(bet) {
+                if (bet.type === boardDivId) betDivPlace.classList.add('chipBackground')
+            });
+        } else {
+            betDivPlace.classList.remove('chipBackground')
+        }
+    });
 };
 function renderButtons() {
     spinBtn.style.visibility = bets.length ? 'visible' : 'hidden';
