@@ -15,7 +15,6 @@
 
 ##### Planned Next Steps:
 * Add music in the background
-* Add chips over numbers
 * Allow to scale to mobile size
 * Add ball to correct number on wheel
 * Enhance CSS styling of buttons
