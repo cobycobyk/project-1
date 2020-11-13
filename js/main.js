@@ -1,4 +1,3 @@
-
 /*----- constants -----*/
 const CHIPSET = {
     onedollar: 1,
@@ -121,7 +120,7 @@ function renderBetPlacement() {
 function renderButtons() {
     spinBtn.style.visibility = bets.length ? 'visible' : 'hidden';
     clrBetBtn.style.visibility = bets.length ? 'visible' : 'hidden';
-    betLastBtn.style.visibility = lastBets.length ? 'visible' : 'hidden';
+    betLastBtn.style.visibility = !bets.length && lastBets.length ? 'visible' : 'hidden';
 };
 function renderMessage() {
     if (winningNum) {
